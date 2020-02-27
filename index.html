@@ -1,75 +1,23 @@
 <html>
-	<head>
-		<title>注册页面</title>
-	</head>
-	<body>
-		<script type="text/javascript">
-			function check(form){
-				if(form.name.value==''){
-					alert("用户名必须填写！");
-					form.name.focus();
-					return false;
-				}
-				if(form.password.value==''){
-					alert("密码必须填写！");
-					form.password.focus();
-					return false;
-				}
-				if(form.final_password.value==''){
-					alert("确认密码必须填写！");
-					form.final_password.focus();
-					return false;
-				}
-				if(form.password.value!=form.final_password.value){
-					alert("请保持两次填写的密码相同！");
-					return false;
-				}
-				return true;
-			}
-		</script>
-		<form id="form_one" onSubmit="return check(this);">
-			<table border="0">
-				<tr>
-					<td align="right" >用户名：</td>
-					<td align="left"><input type="text" name="name"/></td>
-				</tr>
-				<tr>
-					<td align="right">密码：</td>
-					<td align="left"><input type="password" name="password"/></td>
-				</tr>
-				<tr>
-					<td align="right">确认密码：</td>
-					<td align="left"><input type="password" name="final_password"/></td>
-				</tr>
-				<tr>
-					<td align="right">性别：</td>
-					<td align="left"><input type="radio" name="sex" value="man" checked/>男<input type="radio" name="sex" value="woman"/>女</td>
-				</tr>
-				<tr>
-					<td align="right">职业：</td>
-					<td align="left">
-						<select name="job">
-							<option value="1">学生</option>
-							<option value="2">职员</option>
-							<option value="3">经理</option>
-							<option value="4">军人</option>
-							<option value="5">自由人</option>
-						</select>
-					</td>
-				</tr>
-				<tr>
-					<td align="right" >个人爱好：</td>
-					<td align="left"><input type="checkbox" name="hobby"/>电脑网络<input type="checkbox" name="hobby"/>影视娱乐<input type="checkbox" name="hobby"/>棋牌娱乐<br><input type="checkbox" name="hobby"/>读书读报<input type="checkbox" name="hobby"/>美酒佳肴<input type="checkbox" name="hobby"/>绘画书法</td>
-				</tr>
-				<tr>
-					<td align="right" >个人说明：</td>
-					<td align="left"><textarea cols="40" rows="10"></textarea></td>
-				</tr>
-				<tr>
-					<td align="right" ><input type="submit" name="submit" value="提交"/></td>
-					<td align="left"><input type="reset" name="reset" value="重置"/></td>
-				</tr>
-			</table>
-		</form>
-	</body>
+
+<head>
+	<title>个人主页</title>
+	<style type="text/css">
+		body {
+			background-color: black;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="box1">
+		<div style="color:rgb(0, 255, 0)">
+			<h1 style="text-align: center">kimoro个性化首页<h1>
+		</div>
+		<div align="center"><a href="https://www.baidu.com"><img src="bd_lg.png" alt="baidu" width="250"
+					height="75" /></a></div>
+
+	</div>
+</body>
+
 </html>
